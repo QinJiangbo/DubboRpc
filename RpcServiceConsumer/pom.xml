@@ -11,5 +11,12 @@
 
     <artifactId>RpcServiceConsumer</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.qinjiangbo</groupId>
+            <artifactId>RpcServiceApi</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
