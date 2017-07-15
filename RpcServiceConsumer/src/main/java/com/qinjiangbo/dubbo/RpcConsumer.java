@@ -12,7 +12,7 @@ public class RpcConsumer {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("conf/dubbo-service-consumer.xml");
+                new ClassPathXmlApplicationContext("config/dubbo-service-consumer.xml");
         context.start();
 
         LoginService loginService = (LoginService) context.getBean("loginService");
