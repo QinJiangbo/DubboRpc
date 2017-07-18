@@ -18,13 +18,7 @@ public class RpcConsumer {
         LoginService loginService = (LoginService) context.getBean("loginService");
         System.out.println("Does user 'Richard' exist? " + loginService.exist("Richard"));
 
-        boolean flag = loginService.login("Richard", "12345");
+        boolean flag = loginService.login("Richard", "123456");
         System.out.println(flag ? "Login succeed!" : "Login failed!");
-
-        try {
-            TimeUnit.SECONDS.sleep(1000000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 }
